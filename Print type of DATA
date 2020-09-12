@@ -1,0 +1,6 @@
+age=18
+print(type(age))
+name='Ram'
+print(type(name))
+number=1.6
+print(type(number))
