@@ -1,0 +1,11 @@
+our_list=["a","b","c","0"]
+print(our_list)
+
+our_frozenset=frozenset(our_list)
+print(our_frozenset)
+
+our_dictionary={"name":"Ram","age":"20"}
+print(our_dictionary)
+
+our_set={"one","two","three"}
+print(our_set)
