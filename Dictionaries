@@ -1,0 +1,11 @@
+our_dictionary={"Name":"Shyam","Rank":"1st","location":"lost"}
+print(our_dictionary["Name"])
+
+our_dictionary["Name"]="Ram"
+print(our_dictionary)
+
+our_dictionary["Roll no."]="four"
+print(our_dictionary)
+
+our_dictionary.pop("Roll no.")
+print(our_dictionary)
