@@ -1,0 +1,17 @@
+set_a={"one","two","three"}
+set_a.add("four")
+print(set_a)
+
+set_a.update(["five","six"])
+print(set_a)
+
+set_a.remove("six")
+print(set_a)
+""" 
+we can also use discard at the place of remove
+set_a.discard("six")
+print(set_a)
+
+"""
+set_a.pop()
+print(set_a)
