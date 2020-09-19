@@ -1,0 +1,2 @@
+tuple_a=("Apple","Mango","Banana")
+print(tuple_a[1])
