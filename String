@@ -1,0 +1,10 @@
+string_a="Ram"
+print(len(string_a))
+# len calculate the number of alphabets
+
+print(string_a[0])
+
+print(string_a.upper())
+
+string_b="Ritika,Damini,Rani"
+print(string_b.split(","))
