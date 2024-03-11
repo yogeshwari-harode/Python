@@ -1,0 +1,13 @@
+import re
+
+str=input("Enter url: ")
+regex="^[h][t][t][p][s]?://[a-zA-Z0-9]+\.[a-zA-Z0-9&\?=_\-]+$"
+if(re.match(regex,str)):
+  print("Valid url")
+else:
+  print("Invalid url")
+
+# https://github.com/yogeshwari-harode
+# Invalid url
+# https://github.com
+# Valid url
