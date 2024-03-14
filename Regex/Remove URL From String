@@ -1,0 +1,13 @@
+import re
+
+str = input("Enter a string : ")
+
+regex = r'(http|https)://[A-Za-z0-9]+\.[a-zA-Z0-9&\?=_\-]+$'
+
+url= re.findall(regex,str)
+
+newstr=re.sub(regex,'',str)
+
+print(url)
+print("\nString after removing URLs:")
+print(newstr)
