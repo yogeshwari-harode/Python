@@ -1,0 +1,8 @@
+import re
+
+n=input("Enter str: ")
+regex='^[aeiou]$'
+if re.match(regex,n):
+    print("Valid")
+else:
+    print("Invalid")
