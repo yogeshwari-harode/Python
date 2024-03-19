@@ -1,0 +1,10 @@
+class Dog(object):
+  def __init__(self):
+    print('This is a Dog')
+    print('init method called')
+  
+  def speak(self):
+    pass
+
+obj1=Dog()
+obj2=Dog()
