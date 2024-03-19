@@ -1,0 +1,16 @@
+class Person(object):
+  def __init__(self,name,age):
+    self.name=name
+    self.age=age
+  
+  def speak(self):
+    print('Hii! my name is ',self.name,"I'm ",self.age,'year old')
+
+person1=Person('Tom',55)
+person1.speak()
+    
+person2=Person('john',3)
+person2.speak()
+# we can access the class variable outside class
+print(person1.age)
+
