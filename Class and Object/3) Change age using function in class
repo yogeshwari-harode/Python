@@ -1,0 +1,17 @@
+class Person(object):
+  def __init__(self,name,age):
+    self.name=name
+    self.age=age
+  
+  def speak(self):
+    print('Hii! my name is ',self.name,"I'm ",self.age,'year old')
+
+  def change_age(self,age):
+      self.age=age
+    
+obj1=Person('Tom',55)
+obj1.change_age(23)
+obj1.speak()
+    
+obj2=Person('john',3)
+obj2.speak()
