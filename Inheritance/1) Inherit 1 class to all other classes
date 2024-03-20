@@ -1,0 +1,48 @@
+class Addition:
+  def __init__(self, a, b):
+      self.a = a
+      self.b = b
+
+  def add(self):
+      return self.a + self.b
+
+class Subtraction(Addition):
+  def __init__(self, a, b):
+      super().__init__(a, b)
+
+  def sub(self):
+      print("Addition:", self.add())
+      return self.a - self.b
+
+class Multiplication(Addition):
+  def __init__(self, a, b):
+      super().__init__(a, b)
+
+  def mul(self):
+      print("Addition:", self.add())
+      return self.a * self.b
+
+class Division(Addition):
+  def __init__(self, a, b):
+      super().__init__(a, b)
+
+  def div(self):
+      print("Addition:", self.add())
+      if self.b != 0:
+          return self.a / self.b
+      else:
+          return "Cannot divide by zero"
+
+# Example usage:
+add1 = Addition(10, 20)
+sub1 = Subtraction(10, 3)
+mul1 = Multiplication(10, 5)
+div1 = Division(10, 2)
+
+print("Addition:", add1.add())
+print("\nAddition inherited in Subtraction:")
+print("Subtraction:", sub1.sub())
+print("\nAddition inherited in Multiplication:")
+print("Multiplication:", mul1.mul())
+print("\nAddition inherited in Division")
+print("Division:", div1.div())
