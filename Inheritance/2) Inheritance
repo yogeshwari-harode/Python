@@ -1,0 +1,25 @@
+class Animal:  # Base class (parent)
+  def __init__(self, name):
+      self.name = name
+
+  def speak(self):
+      pass
+
+class Dog(Animal):  # Derived class (child)
+  def speak(self):
+      return "Woof!"
+
+class Cat(Animal):  # Another derived class
+  def speak(self):
+      return "Meow!"
+
+# Creating instances of the derived classes
+dog = Dog("Buddy")
+cat = Cat("Whiskers")
+
+print(dog.name)
+# Accessing methods defined in the base class and overridden in the derived class
+print(dog.speak())  # Outputs: Woof!
+print(cat.name)
+print(cat.speak())  # Outputs: Meow!
+#print(Animal.speak())
