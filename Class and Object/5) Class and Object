@@ -1,0 +1,23 @@
+class Parent:
+  def __init__(self,name,age):
+    self.name=name
+    self.age=age
+
+class Child1(Parent):
+  def __init__(self,name,age):
+    super().__init__(name,age)
+    
+  def printChild(self):
+    print("child1:\nName:",self.name,"|| age: ",self.age)
+
+class Child2(Parent):
+  def __init__(self,name,age):
+    super().__init__(name,age)
+    
+  def printChild(self):
+    print("child2:\nName:",self.name,"|| age: ",self.age)  
+
+c1=Child1("Child1",15)
+c1.printChild()
+c2=Child2("Child2",20)
+c2.printChild()
